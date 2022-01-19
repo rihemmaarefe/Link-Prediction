@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Link Prediction</title>
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" >
+        <h1>Link Prediction </h1>
+        <h2>In Social Network</h2>
+        <form class="form" action="#">
+          <fieldset class="form-fieldset ui-input __first">
+            <input  type="number" id="n1" /> {{node1}}
+            <label for="n1">
+              <span data-text="Node 1">Node 1</span>
+            </label>
+          </fieldset>
+          
+          <fieldset class="form-fieldset ui-input __second">
+            <input  type="number" id="n2" /> {{node2}}
+            <label for="n2">
+              <span data-text="Node 2">Node 2 </span>
+            </label>
+          </fieldset>
+
+          <div class="form-footer">
+            <button  onclick="pred(Node1, Node2)" class="btn">Predict Now</button>
+          </div>
+
+
+<fieldset class="form-fieldset ui-input __third">
+    <input type="text" id="Prediction" readonly/> {{mt}}
+    <label for="Prediction">
+      <span data-text="Prediction Result" >Prediction Result</span>
+    </label>
+  </fieldset>
+          
+        </form>
+      </div>
+</body>
+</html>
+
+
+
+
